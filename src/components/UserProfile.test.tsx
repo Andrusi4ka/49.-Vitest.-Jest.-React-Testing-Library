@@ -2,7 +2,6 @@ import { describe, it, expect, vi, beforeEach } from "vitest";
 import { render, screen } from "@testing-library/react";
 import UserProfile from "./UserProfile";
 import * as userApi from "../api/userApi";
-import "@testing-library/jest-dom";
 
 vi.mock("../api/userApi");
 
