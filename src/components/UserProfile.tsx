@@ -19,13 +19,36 @@ const UserProfile = () => {
     if (!user) return <p>No user data</p>;
 
     return (
-        <div>
-            <h2>User Profile</h2>
-            <p>{user.name}</p>
-            <p>{user.email}</p>
-            <p>{user.username}</p>
-            <p>{user.phone}</p>
-            <p>{user.website}</p>
+        <div className="profil_info">
+            <table>
+                <thead>
+                    <tr>
+                        <th colSpan={2}>User Profile</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Name</th>
+                        <td>{user.name}</td>
+                    </tr>
+                    <tr>
+                        <th>Email</th>
+                        <td>{user.email}</td>
+                    </tr>
+                    <tr>
+                        <th>Username</th>
+                        <td>{user.username}</td>
+                    </tr>
+                    <tr>
+                        <th>Phone</th>
+                        <td>{user.phone}</td>
+                    </tr>
+                    <tr>
+                        <th>Website</th>
+                        <td>{user.website}</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     );
 };
